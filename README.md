@@ -1,16 +1,75 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# City Switcher
 
-Currently, two official plugins are available:
+A simple and responsive React application that allows users to switch between Toronto and Vancouver, displaying each city's name and photograph.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Switch between Toronto and Vancouver with a single click
+- Dynamically update city names and photographs
+- Display a button indicating the next city
+- Responsive layout for desktop and mobile devices
+- Clean and minimal user interface
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the ESLint configuration
+- React
+- JavaScript (ES6)
+- JSX
+- CSS3
+- Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+```text
+src/
+├── App.jsx
+├── App.css
+├── City.jsx
+├── cities.js
+├── index.css
+└── main.jsx
+```
+
+The application separates responsibilities across components and files:
+
+- **App.jsx** — manages application state and city switching logic using a React class component.
+- **City.jsx** — displays the city name and photograph using props.
+- **cities.js** — stores city names and image URLs.
+- **App.css** — provides styling and responsive layout.
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/LeahLogic/city-switcher.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd city-switcher
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in the terminal.
+
+## Image Credits
+
+City photographs are sourced from [Unsplash](https://unsplash.com/).
+
+## Author
+
+[LeahLogic](https://github.com/LeahLogic)
